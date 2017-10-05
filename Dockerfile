@@ -36,4 +36,7 @@ RUN apt-get update \
 		libdw-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& apt-get autoremove -y \
-	&& apt-get clean -y
+	&& apt-get clean -y \
+	&& su postgres -c createdb engine \
+	&& su postgres -c "psql -c \"CREATE USER engine WITH PASSWORD 'engine';\"" \
+	&& su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE engine to engine;\""
