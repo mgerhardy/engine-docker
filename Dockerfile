@@ -12,6 +12,7 @@ RUN apt-get update \
 		doxygen \
 		graphviz \
 		postgresql-server-dev-9.6 \
+		postgresql-client-9.6 \
 		libpq-dev \
 		libassimp-dev \
 		lua5.3 \
