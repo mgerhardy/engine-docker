@@ -11,8 +11,8 @@ RUN apt-get update \
 		cmake \
 		doxygen \
 		graphviz \
-		postgresql-server-dev-9.6 \
-		postgresql-client-9.6 \
+		postgresql-server-dev-10 \
+		postgresql-10 \
 		libpq-dev \
 		libassimp-dev \
 		lua5.3 \
