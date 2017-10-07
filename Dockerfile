@@ -40,6 +40,8 @@ RUN apt-get update \
 	&& apt-get clean -y \
 	&& service postgresql start \
 	&& su postgres -c "createdb engine" \
+	&& su postgres -c "createdb enginetest" \
 	&& su postgres -c "psql -c \"CREATE USER engine WITH PASSWORD 'engine';\"" \
-	&& su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE engine to engine;\""
+	&& su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE engine to engine;\"" \
+	&& su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE enginetest to engine;\""
 ENTRYPOINT service postgresql start && /bin/bash
