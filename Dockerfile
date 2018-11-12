@@ -21,6 +21,8 @@ RUN apt-get update \
 		libenet-dev \
 		libcurl4-openssl-dev \
 		opencl-c-headers \
+		uuid-dev \
+		libmosquitto-dev \
 		libgtk-3-dev \
 		qt5-default \
 		qtbase5-dev \
