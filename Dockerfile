@@ -30,10 +30,10 @@ RUN apt-get update \
 		ocl-icd-opencl-dev \
 		cppcheck \
 		gcc-8 \
-		clang-7.0 \
+		clang-7 \
 		ccache \
 		valgrind \
-		clang-format-7.0 \
+		clang-format-7 \
 		linux-perf \
 		binutils-dev \
 		libdw-dev \
