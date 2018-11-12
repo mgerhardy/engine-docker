@@ -27,11 +27,11 @@ RUN apt-get update \
 		ocl-icd-libopencl1 \
 		ocl-icd-opencl-dev \
 		cppcheck \
-		gcc-7 \
-		clang-4.0 \
+		gcc-8 \
+		clang-7.0 \
 		ccache \
 		valgrind \
-		clang-format-4.0 \
+		clang-format-7.0 \
 		linux-perf \
 		binutils-dev \
 		libdw-dev \
